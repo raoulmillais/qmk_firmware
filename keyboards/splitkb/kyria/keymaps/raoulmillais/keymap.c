@@ -23,21 +23,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_TAB,  KC_Q,   KC_W,   KC_E,     KC_R,   KC_T,                                        KC_Y,   KC_U,    KC_I,     KC_O,    KC_P,    KC_BSPC,
       KC_ESC,  KC_A,   KC_S,   KC_D,     KC_F,   KC_G,                                        KC_H,   KC_J,    KC_K,     KC_L,    KC_SCLN, KC_QUOT,
       KC_LSFT, KC_Z,   KC_X,   KC_C,     KC_V,   KC_B,   KC_LSFT, KC_LALT,  KC_RALT, KC_RSFT, KC_N,   KC_M,    KC_COMM,  KC_DOT,  KC_SLSH, KC_ENT,
-               KC_NO, KC_LGUI, MO(LOWER),KC_SPC, KC_ENT,                                      KC_ENT, KC_SPC,  MO(RAISE),KC_RCTL, KC_NO),
+               XXXXXXX,KC_LGUI, MO(LOWER),KC_SPC, KC_ENT,                                      KC_ENT, KC_SPC,  MO(RAISE),KC_RCTL,XXXXXXX),
 
     /* Symbols */
     [LOWER] = LAYOUT(
-      KC_TRNS, KC_EXLM,KC_AT,  KC_LCBR,  KC_RCBR,UC(0xA3),                                    KC_AMPR,KC_LT,   KC_GT,    KC_EQL,  KC_ASTR, KC_TRNS,
-      KC_TRNS, KC_HASH,KC_DLR, KC_LPRN,  KC_RPRN,KC_GRV,                                      KC_PIPE,KC_BSLS, KC_SLSH,  KC_PLUS, KC_MINS, KC_TRNS,
-      KC_TRNS, KC_PERC,KC_CIRC,KC_LBRC,  KC_RBRC,KC_TILD,  KC_TRNS,KC_TRNS, KC_TRNS, KC_TRNS, KC_GRV, KC_DQUO, KC_QUOT,  KC_UNDS, KC_TILD, KC_TRNS,
-               KC_TRNS,KC_TRNS,KC_TRNS,  KC_TRNS,KC_TRNS,                                     KC_TRNS,KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS),
+      _______, KC_EXLM,KC_AT,  KC_LCBR,  KC_RCBR,UC(0xA3),                                    KC_AMPR,KC_LT,   KC_GT,    KC_EQL,  KC_ASTR, _______,
+      _______, KC_HASH,KC_DLR, KC_LPRN,  KC_RPRN,KC_GRV,                                      KC_PIPE,KC_BSLS, KC_SLSH,  KC_PLUS, KC_MINS, _______,
+      _______, KC_PERC,KC_CIRC,KC_LBRC,  KC_RBRC,KC_TILD,  _______,_______, _______, _______, KC_GRV, KC_DQUO, KC_QUOT,  KC_UNDS, KC_TILD, _______,
+               _______,_______,_______,  _______,_______,                                     _______,_______, _______,  _______, _______),
 
     /* Numbers and navigation */
     [RAISE] = LAYOUT(
-      KC_TRNS,KC_MINS, KC_7,   KC_8,     KC_9,   KC_ASTR,                                     KC_HOME,KC_PGDN, KC_PGUP,  KC_END,  KC_TRNS, KC_TRNS,
-      KC_TRNS,KC_CIRC, KC_4,   KC_5,     KC_6,   KC_PLUS,                                     KC_LEFT, KC_DOWN,KC_UP,    KC_RGHT, KC_TRNS, KC_TRNS,
-      KC_TRNS,KC_PERC, KC_1,   KC_2,     KC_3,   KC_HASH,  KC_TRNS,KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCR, KC_INS, KC_INS,   KC_DEL,  KC_TRNS, KC_TRNS,
-               KC_TRNS,KC_0,   KC_TRNS,  KC_TRNS,KC_TRNS,                                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS)
+      _______,KC_MINS, KC_7,   KC_8,     KC_9,   KC_ASTR,                                     KC_HOME,KC_PGDN, KC_PGUP,  KC_END,  _______, _______,
+      _______,KC_CIRC, KC_4,   KC_5,     KC_6,   KC_PLUS,                                     KC_LEFT, KC_DOWN,KC_UP,    KC_RGHT, _______, _______,
+      _______,KC_PERC, KC_1,   KC_2,     KC_3,   KC_HASH,  _______,_______, _______, _______, KC_PSCR, KC_INS, KC_INS,   KC_DEL,  _______, _______,
+               _______,KC_0,   _______,  _______,_______,                                     _______, _______, _______, _______, _______)
 
 };
 // clang-format on
