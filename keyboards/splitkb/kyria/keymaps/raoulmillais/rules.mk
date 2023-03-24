@@ -3,6 +3,7 @@ OLED_DRIVER = SSD1306
 ENCODER_ENABLE = yes
 LEADER_ENABLE = yes
 MOUSEKEY_ENABLE = no
+UNICODE_ENABLE = yes
 
 SRC += oled.c
 SRC += encoders.c
