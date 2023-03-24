@@ -4,6 +4,7 @@ ENCODER_ENABLE = yes
 LEADER_ENABLE = yes
 MOUSEKEY_ENABLE = no
 UNICODE_ENABLE = yes
+CAPS_WORD_ENABLE = yes
 
 SRC += oled.c
 SRC += encoders.c
