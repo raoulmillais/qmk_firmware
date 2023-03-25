@@ -1,6 +1,6 @@
 enum layers {
-    QWERTY = 0,
-    LOWER,
-    RAISE,
+    _QWERTY = 0,
+    _SYM,
+    _NUM,
 };
 
